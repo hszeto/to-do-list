@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
    validates_length_of :email, maximum: 255
    validates_length_of :password, minimum: 6, maximum: 20
 
+   has_many :lists
+
 end
