@@ -26,6 +26,19 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+#Add factory girl
+gem 'factory_girl_rails'
+
+group :development, :test do
+  #...gems above ommited for brevity
+
+  #add in the gem for rspec
+  gem 'rspec-rails', '~> 3.0.0'
+
+   #add validation-association matchers
+  gem 'shoulda-matchers', require: false
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
